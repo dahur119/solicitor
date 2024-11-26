@@ -127,6 +127,19 @@
                                 <div class="dcg-overlay"></div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 col-xs-12 mb30">
+                            <div class="dcg-four dcg-item">
+                                <a class="dcg-url" href="#"></a>
+                                <img class="dcg-image" src="images/practice-areas/10.jpg" alt="" />
+                                <div class="dcg-title"><i class="dcg-icon id-color icofont-soccer"></i>Sport Laws</div>
+                                <div class="dcg-content">
+                                    Our team specializes in providing expert legal services related to sports law, including contract negotiations, intellectual property rights, athlete representation, and dispute resolution. We assist professional athletes, sports organizations, and businesses in navigating legal challenges across various aspects of the sports industry, from sponsorship agreements to compliance with international sports regulations.
+                                </div>
+                                <div class="dcg-text">Read More</div>
+                                <div class="dcg-overlay"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -166,21 +179,7 @@
             </div>
         </div>
     </div>
-    <div id="selector">
-        <div id="demo-rtl" class="sc-opt">
-            <div class="sc-icon">RTL</div><span class="sc-val">Click to Enable</span>
-        </div>
-        <div class="sc-opt sc-mt">
-            <div class="sc-icon"><i class="fa fa-eyedropper"></i></div>
-            <span class="opt tc1" data-color="scheme-01"></span>
-            <span class="opt tc2" data-color="scheme-02"></span>
-            <span class="opt tc3" data-color="scheme-03"></span>
-            <span class="opt tc4" data-color="scheme-04"></span>
-            <span class="opt tc5" data-color="scheme-05"></span>
-            <span class="opt tc6" data-color="scheme-06"></span>
-            <span class="opt tc7" data-color="scheme-07"></span>
-        </div>
-    </div>
+
 
     <!-- Javascript Files
     ================================================== -->

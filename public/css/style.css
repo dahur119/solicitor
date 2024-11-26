@@ -7,7 +7,7 @@
 * body
 * header
     * subheader
-* navigation
+* navigationcontact_form
 * content
 * section
 * footer
@@ -2023,8 +2023,27 @@ header.header-light .logo-2 {
     width: 98%;
 }
 
+
+#need_form textarea {
+    height: 195px;
+}
+
+
+#need_form.s2 textarea {
+    height: 180px;
+}
+
 #contact_form textarea {
     height: 195px;
+}
+
+#edit_form textarea {
+    height: 195px;
+}
+
+
+#edit_form.s2 textarea {
+    height: 180px;
 }
 
 #contact_form.s2 textarea {
@@ -2094,6 +2113,28 @@ input[type="checkbox"] {
 }
 
 #contact_form.form-default textarea {
+    padding: 10px;
+    height: 170px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#edit_form.form-default textarea {
+    padding: 10px;
+    height: 170px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#need_form.form-default textarea {
+    padding: 10px;
+    height: 170px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#need_form.form-default textarea {
     padding: 10px;
     height: 170px;
     border-radius: 3px;
@@ -7386,6 +7427,8 @@ a.btn-border,
 .feature-box-type-1:hover i,
 .feature-box-type-2 i,
 #contact_form input,
+#edit_form input,
+#need_form input,
 #form_subscribe input[type=text],
 .table-pricing tbody tr,
 #selector .dark-mode,

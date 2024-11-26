@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Mail\UserContactConfirmation;
+use App\Mail\ContactNotification;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactFormMail;
+
 
 class ContactController extends Controller
 {
@@ -36,14 +38,34 @@ class ContactController extends Controller
                 'email' => 'required|email|max:255',
                 'phone' => 'nullable|string|max:20',
                 'message' => 'required|string',
-    
+              
             ]);
 
-            Contact::create($validated);
+            $contact = new Contact();
+            $contact->name = $validated['name'];
+            $contact->email = $validated['email'];
+            $contact->phone = $validated['phone'];
+            $contact->message = $validated['message'];  
+            $contact->save();
+
+
+            
+            Mail::to(config('mail.admin_address'))->queue(new ContactNotification(
+                $validated['name'],
+                $validated['email'],
+                $validated['message']
+            ));
+
+            // Queue user confirmation
+            Mail::to($validated['email'])->queue(new UserContactConfirmation(
+                $validated['name'],
+                $validated['email'],
+                $validated['message']
+            ));
 
 
             // Send email
-            Mail::to(config('mail.from.address'))->send(new ContactFormMail($validated));
+           
 
             return response()->json([
                 'status' => 'success',

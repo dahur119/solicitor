@@ -131,6 +131,13 @@
                             <div class="d-overlay"></div>
                             <img src="images/practice-areas/9.jpg" class="img-fullwidth" alt="">
                         </div>
+
+                        <div class="de-img-cap">
+                            <i class="id-color icofont-soccer"></i>
+                            <h3>Sport Law</h3>
+                            <div class="d-overlay"></div>
+                            <img src="images/practice-areas/10.jpg" class="img-fullwidth" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -279,6 +286,7 @@
                             <ul class="ul-style-2 wow fadeInRight" data-wow-delay=".2s">
                                 <li>Corporate And Commercial Law</li>
                                 <li>Expatriate/Immigration Matters</li>
+                                <li>Sport Law </li>
                                
                             </ul>
                         </div>
@@ -447,7 +455,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="text-center">
-                                <h2 class="wow fadeInUp">Latest News</h2>
+                                <h2 class="wow fadeInUp">Library</h2>
                                 <div class="small-border"></div>
                             </div>
                         </div>
@@ -487,10 +495,10 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-8 mb-sm-30 text-lg-start text-sm-center wow fadeInRight">
-                            <h3 class="no-bottom">Contact Us Now! Get a Free Consultation for Your Case.</h3>
+                            <h3 class="no-bottom">Tell Us What You Need, See What’s Possible.</h3>
                         </div>
                         <div class="col-md-4 text-lg-end rtl-lg-start text-sm-center wow fadeInRight">
-                            <a href="#" class="btn-custom btn-black text-white light">Make Appointment</a>
+                            <a href="/legal-needs" class="btn-custom btn-black text-white light">Preview Solutions</a>
                         </div>
                     </div>
                 </div>
@@ -517,18 +525,7 @@
             </div>
         </div>
     </div>
-    <div id="selector">
-        <div class="sc-opt sc-mt">
-            <div class="sc-icon"><i class="fa fa-eyedropper"></i></div>
-            <span class="opt tc1" data-color="scheme-01"></span>
-            <span class="opt tc2" data-color="scheme-02"></span>
-            <span class="opt tc3" data-color="scheme-03"></span>
-            <span class="opt tc4" data-color="scheme-04"></span>
-            <span class="opt tc5" data-color="scheme-05"></span>
-            <span class="opt tc6" data-color="scheme-06"></span>
-            <span class="opt tc7" data-color="scheme-07"></span>
-        </div>
-    </div>
+
    
     <!-- Javascript Files
     ================================================== -->

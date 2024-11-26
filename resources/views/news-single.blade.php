@@ -65,11 +65,14 @@
                                     
                                     {!! $newsItem->message !!}
                                 </div>
+                                <div class="spacer-single"></div>
+                                <div >
                                 @auth
-                    <div class="col-md-4">
+                  
                         <a href="{{ route('news.edit', ['slug' => $newsItem->slug]) }}" class="btn btn-warning">Edit Button</a>
-                    </div>
+    
                     @endauth
+                </div>
 
                            
                             </div>
@@ -108,6 +111,7 @@
                                             <label>Message <span class="req">*</span></label>
                                             <textarea cols="10" rows="10" name="content" id="message" class="form-control" required></textarea>
                                             <div id="error_message" class="error">Please check your message</div>
+                                            <div class="spacer-single"></div>
                                             <p id="btnsubmit">
                                                 <input type="submit" id="send" value="Send" class="btn btn-custom" />
                                             </p>

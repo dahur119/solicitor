@@ -71,7 +71,9 @@
                                 <div id="mail_success" class="success">Your news has been updated successfully.</div>
                                 <div id="mail_fail" class="error">Sorry, error occurred while updating your news.</div>
                             </form>
-                            <div class="col-lg-4">
+                            <div class="spacer-single"></div>
+
+                            <div >
                            
                                 <form action="{{ route('news.destroy', ['id' => $news->id]) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this news item?');">
                                     @csrf

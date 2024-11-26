@@ -6,6 +6,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\NeedController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +22,9 @@ use App\Http\Controllers\CommentController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
 
 
 Route::get('/', [PageController::class, 'index']);
@@ -47,5 +51,8 @@ Route::middleware('auth')->group(function () {
     Route::put('/news/{slug}', [NewsController::class, 'update'])->name('news.update');
     Route::delete('/news/{id}', [NewsController::class, 'destroy'])->name('news.destroy');
 });
+
+Route::get('/legal-needs', [NeedController::class, 'index'])->name('needs.index');
+Route::post('/legal-needs', [NeedController::class, 'store'])->name('needs.store');
 
 require __DIR__.'/auth.php';
